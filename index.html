@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="">
@@ -33,7 +34,7 @@
           <a href="" class="">Contact</a>
         </div>
       </nav>
-      <main>
+      <main class="bg-dark-blue">
         <div class="flex w-full h-screen overflow-hidden">
           <!-- YouTube Fullscreen Background -->
           <div class="absolute inset-0 t-0 pointer-events-none">
@@ -64,33 +65,184 @@
         </div>
 
         <section
-          class="relative flex justify-center align-center w-full min-h-screen px-[10%]"
+          class="relative flex flex-row justify-between items-center w-full h-[200vh] bg-black text-white min-h-screen px-[10%]"
         >
-          <div class="absolute z-[-1] top-0 w-full h-screen bg-black"></div>
-          <div class="resource-content">
+          <!-- <div class="absolute z-[-1] top-0 w-full h-screen bg-black"></div> -->
+          <div class="resource-content w-auto">
             <img
+            id="defLink"
               class="w-lg"
-              src="https://sangnila.com/service-kidclass.png"
+              src="/service-kidclass.png"
               alt=""
             />
           </div>
-          <div class="text-content">
-            <h1 class="text-white">
+          <div class="text-content relative w-2/5">
+            <h1 class="font-bold text-white text-3xl xl:text-5xl">
               KID CLASS & <br />
               ELECTIVE KID CLASS
             </h1>
+            <h4 class="xl:text-xl mt-8">
+              Sangnila offers Kid Classes and Elective <br />
+              Kid Classes for children ages 6-12.
+            </h4>
+
+            <div class="text-content mt-12 capitalize">
+              <h2 class="text-xl font-bold xl:text-3xl ">kid classes:</h2>
+              <div class="mt-8 grid grid-cols-3 gap-5">
+                
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-roblox.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">roblox</p>
+                </div>
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-digitaldrawing.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">digital drawing</p>
+                </div>
+                
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-artsandcraft.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">arts & craf</p>
+                </div>
+              </div>
+            </div>
+            <div class="content mt-12 capitalize">
+              <h2 class="text-xl font-bold xl:text-3xl">elective classes:</h2>
+              <div class="mt-8 grid grid-cols-3 items-center">
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-minicourses.svg" class="w-1/3 h-20" alt="">
+                  <p class="text-center">mini courses</p>
+                </div>
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-workshop.svg" class="w-1/3 h-20" alt="">
+                  <p class="text-center">workshop</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="bg-blue-700 font-bold mt-8 py-3 px-8 rounded-lg">
+              <a href="#" class="text-white">view more</a></button>
           </div>
         </section>
 
-        <section class="relative flex justify-center w-full">
-          <div
-            class="absolute w-full h-screen"
-            style="background: darkblue"
-          ></div>
+        <section
+          class="relative flex flex-row justify-between items-center w-full h-[200vh] bg-black text-white min-h-screen px-[10%]"
+        >
+          <!-- <div class="absolute z-[-1] top-0 w-full h-screen bg-black"></div> -->
+          <div class="resource-content w-auto">
+            <img
+            id="defLink"
+              class="w-lg"
+              src="/service-regularclass.png"
+              alt=""
+            />
+          </div>
+          <div class="text-content relative w-2/5">
+            <h1 class="font-bold text-white text-3xl xl:text-5xl">
+              REGULAR CLASS & <br />
+              ELECTIVE KID CLASS
+            </h1>
+            <h4 class="xl:text-xl mt-8">
+              Sangnila offers Regular Classes and Elective
+Classes for children ages > 13.
+            </h4>
+
+            <div class="text-content mt-12 capitalize">
+              <h2 class="text-xl font-bold xl:text-3xl ">regular classes:</h2>
+              <div class="mt-8 grid grid-cols-3 gap-5">
+                
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-conceptart.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">concapt art</p>
+                </div>
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-3dmodelling.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">3D modeling</p>
+                </div>
+                
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-andmore.svg" class="py-5 w-1/2 h-24" alt="">
+                  <p class="mt-2 text-center">and more</p>
+                </div>
+              </div>
+            </div>
+            <div class="content mt-12 capitalize">
+              <h2 class="text-xl font-bold xl:text-3xl">elective classes:</h2>
+              <div class="mt-8 grid grid-cols-3 items-center">
+                <div class="flex flex-col justify-between items-center">
+                  <img id="defLink" src="/service-workshop.svg" class="w-1/3 h-20" alt="">
+                  <p class="text-center">workshop</p>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="bg-blue-700 font-bold mt-8 py-3 px-8 rounded-lg">
+              <a href="#" class="text-white">view more</a></button>
+          </div>
+        </section>
+
+        
+
+        <section class="bg-dark-blue w-full h-screen relative flex flex-col items-center pt-20">
+          <h1 class="text-white font-bold text-5xl mb-10 text-center">STUDENTS TESTIMONIAL</h1>
+
+          <div class="w-[1300px] overflow-hidden relative">
+            <div id="sliderContainer" class="flex transition-transform duration-500 ease-in-out">
+              <img src="https://sangnilaindonesia.com/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-3">
+              <img src="https://sangnilaindonesia.com/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-1">
+              <img src="https://sangnilaindonesia.com/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-2">
+              <img src="https://sangnilaindonesia.com/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-3">
+              <img src="https://sangnilaindonesia.com/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-1">
+            </div>
+          </div>
+
+          
+          <div class="absolute w-[1300px] top-1/2 transform -translate-y-1/2 flex justify-between px-4">
+            <button id="prevBtn" class="relative p-2 right-50 cursor-pointer">
+              <img class="w-17" src="https://sangnilaindonesia.com/arrow-left.svg" alt="">
+            </button>
+            <button id="nextBtn" class="relative p-2 left-50 cursor-pointer">
+              <img class="w-17" src="https://sangnilaindonesia.com/arrow-right.svg" alt="">
+            </button>
+          </div>
+        </section>
+
+        <section class="w-full mt-15 relative flex flex-col items-center ">
+          <div class="w-5/6 mx-auto">
+          <h1 class="text-white flex flex-col font-bold text-5xl mb-19 text-center">ARTS GALLERY</h1>
+          <div class="w-full flex flex-row items-center justify-center z-[5] gap-4">
+          <h1 class="inline text-white text-2xl font-semibold w-50">Digital Drawing</h1> 
+          <div class="h-2 w-full" style="background: linear-gradient(
+            to right,
+            rgb(30, 184, 205),
+            rgb(53, 77, 155)
+          );"></div>
+        </div>
+<div class="flex flex-row w-full text-white mt-10 gap-10  overflow-hidden relative">
+          <div class="flex flex-col">
+            <img src="https://lms.sangnilaindonesia.com/storage/progress-portfolio/hkBDH2ZeaAZ4vDQbzT4DPx4Ue7hAoqCKSySTrKIP.webp" alt="" class="w-400 rounded-lg">
+            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
+            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
+          </div>
+          <div class="flex flex-col">
+            <img src="https://lms.sangnilaindonesia.com/storage/progress-portfolio/xr1HeiccvkkGVHU5DAJW6plWnsqhQdyrw01Ci8HB.webp" alt="" class="w-400 rounded-lg">
+            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
+            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
+          </div>
+          <div class="flex flex-col">
+            <img src="https://lms.sangnilaindonesia.com/storage/progress-portfolio/GbXEAbShNyL8grJUHevNlpIZCYfS3Vp2DydRki62.webp" alt="" class="w-400 rounded-lg">
+            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
+            <h1 class="text white text-xl">Lynetta Charine</h1>
+          </div>
+          <div class="flex flex-col">
+            <img src="https://lms.sangnilaindonesia.com/storage/progress-portfolio/GoiyVI4vIFLOjLiezwcl2ejl9HrVRUVWnLG4KMAL.webp" alt="" class="w-400 rounded-lg">
+            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
+            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
+          </div>
+        </div>
+
         </section>
       </main>
 
-      <script src="data.js"></script>
+      <script src="script.js"></script>
+
     </div>
   </body>
 </html>
