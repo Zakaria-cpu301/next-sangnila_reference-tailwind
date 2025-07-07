@@ -1,4 +1,5 @@
-# Tailwind CSS Starter Project
+### TIDAK DULU DI JALANKAN 
+<!-- # Tailwind CSS Starter Project
 
 ## Cara Setup
 
@@ -16,4 +17,4 @@
 ```
 
 3. Buka index.html di browser untuk melihat hasilnya.
-
+ -->
