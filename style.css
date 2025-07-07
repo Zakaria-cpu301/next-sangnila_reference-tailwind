@@ -1,0 +1,7 @@
+.bg-dark-blue {
+    background-color : #012967;
+}
+
+@theme {
+    --bg-page: rgb(1, 41, 103);
+}
