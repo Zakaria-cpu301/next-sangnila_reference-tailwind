@@ -6,6 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body class="">
     <div class="w-full h-auto">
@@ -34,24 +40,41 @@
           <a href="" class="">Contact</a>
         </div>
       </nav>
-      <main>
-        <div class="relative flex w-full h-screen overflow-hidden">
+      <main class="bg-dark-blue">
+        <div class="relative flex w-full h-screen px-[10%] overflow-hidden">
           <!-- YouTube Fullscreen Background -->
           <div class="absolute inset-0 t-0 pointer-events-none">
-            <video autoplay muted loop class="relative w-full h-auto object-cover">
-              <source id="defLink" src="https://sangnila.com/Final_NagaoRen_6 Both.mp4">
+            <video
+              autoplay
+              muted
+              loop
+              class="relative w-full h-auto object-cover"
+            >
+              <source
+                id="defLink"
+                src="https://sangnila.com/Final_NagaoRen_6 Both.mp4"
+              />
             </video>
           </div>
-          <div class="absolute w-full h-screen inset-0 z-[1]" style="background: linear-gradient(to top, rgb(1, 41, 103) 0%, transparent 100%);"></div>
+          <div
+            class="absolute w-full h-screen inset-0 z-[1]"
+            style="
+              background: linear-gradient(
+                to top,
+                rgb(1, 41, 103) 0%,
+                transparent 100%
+              );
+            "
+          ></div>
 
           <div
-            class="absolute z-10 right-0 top-20 text-white text-xl font-semibold"
+            class="absolute z-10 right-[10%] top-20 text-white text-xl font-semibold"
           >
             <h1>© 2025 Nagaoren - Laurentia Gaby</h1>
           </div>
 
           <div class="relative z-10 h-full flex items-center">
-            <div class="pl-25 text-white">
+            <div class="text-white">
               <h1 class="text-5xl md:text-7xl font-extrabold text">
                 SANGNILA<br />ARTS ACADEMY
               </h1>
@@ -60,16 +83,12 @@
         </div>
 
         <section
-          class="relative flex flex-row justify-between items-center w-full h-[200vh] text-white min-h-screen px-[10%] bg-global-page" style="background-color: rgb(1, 41, 103);"
+          class="relative flex flex-row justify-between items-center w-full h-[200vh] text-white min-h-screen px-[10%] bg-global-page"
+          style="background-color: rgb(1, 41, 103)"
         >
           <!-- <div class="absolute z-[-1] top-0 w-full h-screen"></div> -->
           <div class="resource-content w-auto">
-            <img
-            id="defLink"
-              class="w-lg"
-              src="/service-kidclass.png"
-              alt=""
-            />
+            <img id="defLink" class="w-lg" src="/service-kidclass.png" alt="" />
           </div>
           <div class="text-content relative w-2/5">
             <h1 class="font-bold text-white text-3xl xl:text-5xl">
@@ -82,20 +101,34 @@
             </h4>
 
             <div class="text-content mt-12 capitalize">
-              <h2 class="text-xl font-bold xl:text-3xl ">kid classes:</h2>
+              <h2 class="text-xl font-bold xl:text-3xl">kid classes:</h2>
               <div class="mt-8 grid grid-cols-3 gap-5">
-                
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-roblox.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-roblox.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">roblox</p>
                 </div>
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-digitaldrawing.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-digitaldrawing.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">digital drawing</p>
                 </div>
-                
+
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-artsandcraft.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-artsandcraft.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">arts & craf</p>
                 </div>
               </div>
@@ -104,28 +137,49 @@
               <h2 class="text-xl font-bold xl:text-3xl">elective classes:</h2>
               <div class="mt-8 grid grid-cols-3 items-center">
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-minicourses.svg" class="w-1/3 h-20" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-minicourses.svg"
+                    class="w-1/3 h-20"
+                    alt=""
+                  />
                   <p class="text-center">mini courses</p>
                 </div>
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-workshop.svg" class="w-1/3 h-20" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-workshop.svg"
+                    class="w-1/3 h-20"
+                    alt=""
+                  />
                   <p class="text-center">workshop</p>
                 </div>
               </div>
             </div>
-            <button type="button" class="font-bold mt-12 py-3 px-20 rounded-lg" style="background: linear-gradient(to right, rgb(30, 181, 203) 0%, rgb(52, 78, 155) 100%);">
+            <button
+              type="button"
+              class="font-bold mt-12 py-3 px-20 rounded-lg"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgb(30, 181, 203) 0%,
+                  rgb(52, 78, 155) 100%
+                );
+              "
+            >
               <a href="#" class="text-white text-xl">view more</a>
             </button>
           </div>
         </section>
 
         <section
-          class="relative flex flex-row justify-between items-center w-full h-[200vh] text-white min-h-screen px-[10%] bg-global-page" style="background-color: rgb(1, 41, 103);"
+          class="relative flex flex-row justify-between items-center w-full h-auto mb-50 text-white min-h-screen px-[10%] bg-global-page"
+          style="background-color: rgb(1, 41, 103)"
         >
           <!-- <div class="absolute z-[-1] top-0 w-full h-screen"></div> -->
           <div class="resource-content w-auto">
             <img
-            id="defLink"
+              id="defLink"
               class="w-lg"
               src="/service-regularclass.png"
               alt=""
@@ -137,25 +191,39 @@
               ELECTIVE KID CLASS
             </h1>
             <h4 class="xl:text-xl mt-8">
-              Sangnila offers Regular Classes and Elective
-Classes for children ages > 13.
+              Sangnila offers Regular Classes and Elective Classes for children
+              ages > 13.
             </h4>
 
             <div class="text-content mt-12 capitalize">
-              <h2 class="text-xl font-bold xl:text-3xl ">regular classes:</h2>
+              <h2 class="text-xl font-bold xl:text-3xl">regular classes:</h2>
               <div class="mt-8 grid grid-cols-3 gap-5">
-                
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-conceptart.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-conceptart.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">concapt art</p>
                 </div>
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-3dmodelling.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-3dmodelling.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">3D modeling</p>
                 </div>
-                
+
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-andmore.svg" class="py-5 w-1/2 h-24" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-andmore.svg"
+                    class="py-5 w-1/2 h-24"
+                    alt=""
+                  />
                   <p class="mt-2 text-center">and more</p>
                 </div>
               </div>
@@ -164,80 +232,278 @@ Classes for children ages > 13.
               <h2 class="text-xl font-bold xl:text-3xl">elective classes:</h2>
               <div class="mt-8 grid grid-cols-3 items-center">
                 <div class="flex flex-col justify-between items-center">
-                  <img id="defLink" src="/service-workshop.svg" class="w-1/3 h-20" alt="">
+                  <img
+                    id="defLink"
+                    src="/service-workshop.svg"
+                    class="w-1/3 h-20"
+                    alt=""
+                  />
                   <p class="text-center">workshop</p>
                 </div>
               </div>
             </div>
-            <button type="button" class="font-bold mt-12 py-3 px-20 rounded-lg" style="background: linear-gradient(to right, rgb(30, 181, 203) 0%, rgb(52, 78, 155) 100%);">
+            <button
+              type="button"
+              class="font-bold mt-12 py-3 px-20 rounded-lg"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgb(30, 181, 203) 0%,
+                  rgb(52, 78, 155) 100%
+                );
+              "
+            >
               <a href="#" class="text-white text-xl">view more</a>
             </button>
           </div>
         </section>
 
-        <section class="bg-dark-blue w-full h-auto pb-10 relative flex flex-col items-center pt-20">
-          <h1 class="text-white font-bold text-5xl mb-20 text-center">STUDENTS TESTIMONIAL</h1>
+        <section
+          class="bg-dark-blue w-full h-auto pb-10 relative flex flex-col items-center pt-20"
+        >
+          <h1 class="text-white font-bold text-5xl mb-20 text-center">
+            STUDENTS TESTIMONIAL
+          </h1>
 
           <div class="w-[1300px] overflow-hidden relative">
-            <div id="sliderContainer" class="flex transition-transform duration-500 ease-in-out">
-              <img id="defLink" src="/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-3">
-              <img id="defLink" src="/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-1">
-              <img id="defLink" src="/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-2">
-              <img id="defLink" src="/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-3">
-              <img id="defLink" src="/students-testimonial-angie.svg" class="w-[1300px] flex-shrink-0" alt="slide-1">
+            <div
+              id="sliderContainer"
+              class="flex transition-transform duration-500 ease-in-out"
+            >
+              <img
+                id="defLink"
+                src="/students-testimonial-angie.svg"
+                class="w-[1300px] flex-shrink-0"
+                alt="slide-3"
+              />
+              <img
+                id="defLink"
+                src="/students-testimonial-angie.svg"
+                class="w-[1300px] flex-shrink-0"
+                alt="slide-1"
+              />
+              <img
+                id="defLink"
+                src="/students-testimonial-angie.svg"
+                class="w-[1300px] flex-shrink-0"
+                alt="slide-2"
+              />
+              <img
+                id="defLink"
+                src="/students-testimonial-angie.svg"
+                class="w-[1300px] flex-shrink-0"
+                alt="slide-3"
+              />
+              <img
+                id="defLink"
+                src="/students-testimonial-angie.svg"
+                class="w-[1300px] flex-shrink-0"
+                alt="slide-1"
+              />
             </div>
           </div>
 
-          
-          <div class="absolute w-[1300px] top-1/2 transform -translate-y-1/2 flex justify-between px-4">
+          <div
+            class="absolute w-[1300px] top-1/2 transform -translate-y-1/2 flex justify-between px-4"
+          >
             <button id="prevBtn" class="relative p-2 right-50 cursor-pointer">
-              <img class="w-17" id="defLink" src="/arrow-left.svg" alt="">
+              <img class="w-17" id="defLink" src="/arrow-left.svg" alt="" />
             </button>
             <button id="nextBtn" class="relative p-2 left-50 cursor-pointer">
-              <img class="w-17" id="defLink" src="/arrow-right.svg" alt="">
+              <img class="w-17" id="defLink" src="/arrow-right.svg" alt="" />
             </button>
           </div>
         </section>
 
-        <section class="bg-dark-blue w-full mt-15 relative flex flex-col items-center ">
-          <div class="w-5/6 mx-auto">
-          <h1 class="text-white flex flex-col font-bold text-5xl mb-19 text-center">ARTS GALLERY</h1>
-          <div class="w-full flex flex-row items-center justify-center z-[5] gap-4">
-          <h1 class="inline text-white text-2xl font-semibold w-50">Digital Drawing</h1> 
-          <div class="h-2 w-full" style="background: linear-gradient(
-            to right,
-            rgb(30, 184, 205),
-            rgb(53, 77, 155)
-          );"></div>
-        </div>
-<div class="flex flex-row w-full text-white mt-10 gap-10  overflow-hidden relative">
-          <div class="flex flex-col">
-            <img id="lmsLink" src="/hkBDH2ZeaAZ4vDQbzT4DPx4Ue7hAoqCKSySTrKIP.webp" alt="" class="w-400 rounded-lg">
-            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
-            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
+        <section
+          class="bg-dark-blue relative w-full h-auto flex flex-col items-center pb-40"
+        >
+          <div class="w-5/6 mx-auto uppercase z-1">
+            <h1
+              class="text-white flex flex-col font-bold text-5xl mb-20 text-center"
+            >
+              arts galery
+            </h1>
+            <div
+              class="w-full flex flex-row items-center justify-center z-[5] gap-4 mt-20 capitalize"
+            >
+              <h1 class="inline text-white text-2xl font-semibold w-50">
+                digital drawing
+              </h1>
+              <div
+                class="h-2 w-full"
+                style="
+                  background: linear-gradient(
+                    to right,
+                    rgb(30, 184, 205),
+                    rgb(53, 77, 155)
+                  );
+                "
+              ></div>
+            </div>
           </div>
-          <div class="flex flex-col">
-            <img id="lmsLink" src="/xr1HeiccvkkGVHU5DAJW6plWnsqhQdyrw01Ci8HB.webp" alt="" class="w-400 rounded-lg">
-            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
-            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
-          </div>
-          <div class="flex flex-col">
-            <img id="lmsLink" src="/GbXEAbShNyL8grJUHevNlpIZCYfS3Vp2DydRki62.webp" alt="" class="w-400 rounded-lg">
-            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
-            <h1 class="text white text-xl">Lynetta Charine</h1>
-          </div>
-          <div class="flex flex-col">
-            <img id="lmsLink" src="/GoiyVI4vIFLOjLiezwcl2ejl9HrVRUVWnLG4KMAL.webp" alt="" class="w-400 rounded-lg">
-            <h1 class="text white font-semibold text-2xl">Student Portofolio - Digital Drawing</h1>
-            <h1 class="text white text-xl">Shafa Alviana Sanjaya</h1>
-          </div>
-        </div>
 
+          <div
+            class="digital-drawing relative flex flex-row w-5/6 xl:w-4/5 h-auto text-white mt-15 gap-10 z-2"
+          >
+            <div class="flex flex-row justify-between w-full overflow-hidden">
+              <!--  -->
+            </div>
+          </div>
+
+          <div class="w-5/6 mx-auto">
+            <div
+              class="w-full flex flex-row items-center justify-center gap-4 mt-20 capitalize z-2"
+            >
+              <h1 class="inline text-white text-2xl font-semibold w-50">
+                2D animation
+              </h1>
+              <div
+                class="h-2 w-full"
+                style="
+                  background: linear-gradient(
+                    to right,
+                    rgb(30, 184, 205),
+                    rgb(53, 77, 155)
+                  );
+                "
+              ></div>
+            </div>
+          </div>
+          <div
+            class="twoD-animation flex flex-col w-5/6 xl:w-4/5 items-center justify-center gap-4 mt-10 z-1"
+          >
+            <div
+              class="flex flex-row w-full mt-10 gap-10 overflow-x-auto"
+            ></div>
+          </div>
+          <div class="bg-dark-blue absolute bottom-0 z-[0] w-full h-auto">
+            <img
+            id="defLink"
+            src="/bg-gradient-bottom2.png"
+            alt=""
+            class="absolute bottom-0 w-full"
+            />
+          </div>
         </section>
       </main>
-
-      <script src="script.js"></script>
-
     </div>
+    <footer
+      class="flex flex-wrap justify-between items-center gap-4 px-[5%] py-[1.5%] w-full bg-slate-800 h-70 text-white text-xl"
+    >
+      <div class="w-full sm:w-[35%] items-center justify-center">
+        <p class="text-start font-extrabold text-2xl">
+          Sangnila Indonesia Website
+        </p>
+        <p class="text-md mt-1">
+          Copyright © 2025 - Sangnila Interactive Media and Technology
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-4 w-full sm:w-[25%]">
+        <div class="flex flex-col gap-1">
+          <h2 class="text-md font-bold">Find Us</h2>
+          <p>
+            <a
+              href="https://maps.app.goo.gl/Did4dZueYwVNtSM9A"
+              class="hover:underline"
+            >
+              Paskal Hyper Square B70, Jl.Pasir Kaliki No.23, Kec. Cicendo, Kota
+              Bandung
+            </a>
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <h6 class="text-md font-bold">Contact Us</h6>
+          <ul>
+            <li class="flex items-center gap-2">
+              <i class="bi bi-telephone"></i>
+              <a href="https://wa.me/6285693257411" class="hover:underline"
+                >+62 856-9325-7411</a
+              >
+            </li>
+            <li class="flex items-center gap-2 mt-1">
+              <i class="bi bi-envelope"></i>
+              <a
+                href="mailto:admin@sangnilaindonesia.com"
+                class="hover:underline"
+                >admin@sangnilaindonesia.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full sm:w-auto">
+        <h6 class="text-md font-bold mb-1">Social Media</h6>
+        <ul class="flex flex-col gap-1">
+          <li>
+            <a
+              href="https://www.instagram.com/sangnila.academy/"
+              class="flex items-center gap-2 hover:underline"
+            >
+              <i class="bi bi-instagram"></i><span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sangnila.artsacademy"
+              class="flex items-center gap-2 hover:underline"
+            >
+              <i class="bi bi-facebook"></i><span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@sangnilaartsacademy"
+              class="flex items-center gap-2 hover:underline"
+            >
+              <i class="bi bi-tiktok"></i><span>TikTok</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@sangnilaartsacademy1709"
+              class="flex items-center gap-2 hover:underline"
+            >
+              <i class="bi bi-youtube"></i><span>YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/pt-sangnila-interaktif-media-dan-teknologi/"
+              class="flex items-center gap-2 hover:underline"
+            >
+              <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col w-full sm:w-auto relative bottom-13">
+        <h6 class="text-md font-bold mb-1">Sangnila webApps</h6>
+        <ul class="flex flex-col gap-1">
+          <li class="flex items-center gap-2">
+            <i class="bi bi-globe2"></i>
+            <a
+              href="https://register.sangnilaindonesia.com/admin-login/"
+              class="hover:underline"
+              >Academy Registration</a
+            >
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="bi bi-globe2"></i>
+            <a
+              href="https://finance.sangnilaindonesia.com/"
+              class="hover:underline"
+              >Learning Management System</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
